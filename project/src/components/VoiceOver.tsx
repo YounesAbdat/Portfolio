@@ -20,6 +20,86 @@ const projects = [
     duration: "0:30"
   },
 
+  {
+    title: "National Geographic Documentary",
+    description: "Nature documentary narration showcasing wildlife in their natural habitat.",
+    audioUrl: "https://example.com/audio1.mp3",
+    category: "Documentary",
+    duration: "2:30"
+  },
+  {
+    title: "National Geographic Documentary",
+    description: "Nature documentary narration showcasing wildlife in their natural habitat.",
+    audioUrl: "https://example.com/audio1.mp3",
+    category: "Documentary",
+    duration: "2:30"
+  },
+  {
+    title: "National Geographic Documentary",
+    description: "Nature documentary narration showcasing wildlife in their natural habitat.",
+    audioUrl: "https://example.com/audio1.mp3",
+    category: "Documentary",
+    duration: "2:30"
+  },
+ 
+  {
+    title: "National Geographic Documentary",
+    description: "Nature documentary narration showcasing wildlife in their natural habitat.",
+    audioUrl: "https://example.com/audio1.mp3",
+    category: "Documentary",
+    duration: "2:30"
+  },
+
+  {
+    title: "National Geographic Documentary",
+    description: "Nature documentary narration showcasing wildlife in their natural habitat.",
+    audioUrl: "https://example.com/audio1.mp3",
+    category: "Documentary",
+    duration: "2:30"
+  },
+  {
+    title: "National Geographic Documentary",
+    description: "Nature documentary narration showcasing wildlife in their natural habitat.",
+    audioUrl: "https://example.com/audio1.mp3",
+    category: "Documentary",
+    duration: "2:30"
+  },
+  {
+    title: "National Geographic Documentary",
+    description: "Nature documentary narration showcasing wildlife in their natural habitat.",
+    audioUrl: "https://example.com/audio1.mp3",
+    category: "Documentary",
+    duration: "2:30"
+  },
+  {
+    title: "National Geographic Documentary",
+    description: "Nature documentary narration showcasing wildlife in their natural habitat.",
+    audioUrl: "https://example.com/audio1.mp3",
+    category: "Documentary",
+    duration: "2:30"
+  },
+  {
+    title: "National Geographic Documentary",
+    description: "Nature documentary narration showcasing wildlife in their natural habitat.",
+    audioUrl: "https://example.com/audio1.mp3",
+    category: "Documentary",
+    duration: "2:30"
+  },
+  {
+    title: "National Geographic Documentary",
+    description: "Nature documentary narration showcasing wildlife in their natural habitat.",
+    audioUrl: "https://example.com/audio1.mp3",
+    category: "Documentary",
+    duration: "2:30"
+  },
+  {
+    title: "National Geographic Documentary",
+    description: "Nature documentary narration showcasing wildlife in their natural habitat.",
+    audioUrl: "https://example.com/audio1.mp3",
+    category: "Documentary",
+    duration: "2:30"
+  },
+
 
 ];
 

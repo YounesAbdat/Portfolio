@@ -7,6 +7,7 @@ export default function About() {
     triggerOnce: true,
     threshold: 0.1,
   });
+ 
 
   return (
     <section id="about" className="min-h-screen bg-gradient-to-br from-blue-950 via-purple-950 to-black py-20">

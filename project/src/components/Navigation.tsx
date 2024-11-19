@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X } from 'lucide-react';
+import { Menu, Sliders, X } from 'lucide-react';
+
 
 const navItems = [
   { name: 'Home', href: '#home' },
@@ -18,6 +19,7 @@ const menuVariants = {
     transition: {
       duration: 0.2
     }
+
   },
   open: {
     scale: 1,
@@ -123,3 +125,8 @@ export default function Navigation() {
     </nav>
   );
 }
+
+
+
+
+
