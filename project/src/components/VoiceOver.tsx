@@ -1,156 +1,80 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Play, Pause, Volume2 } from 'lucide-react';
 
-const projects = [
-  {
-    title: "National Geographic Documentary",
-    description: "Nature documentary narration showcasing wildlife in their natural habitat.",
-    audioUrl: "https://example.com/audio1.mp3",
-    category: "Documentary",
-    duration: "2:30"
-  },
-  
-  {
-    title: "Nike Commercial",
-    description: "Dynamic voice-over for Nike's latest running shoe campaign.",
-    audioUrl: "https://example.com/audio2.mp3",
-    category: "Commercial",
-    duration: "0:30"
-  },
-
-  {
-    title: "National Geographic Documentary",
-    description: "Nature documentary narration showcasing wildlife in their natural habitat.",
-    audioUrl: "https://example.com/audio1.mp3",
-    category: "Documentary",
-    duration: "2:30"
-  },
-  {
-    title: "National Geographic Documentary",
-    description: "Nature documentary narration showcasing wildlife in their natural habitat.",
-    audioUrl: "https://example.com/audio1.mp3",
-    category: "Documentary",
-    duration: "2:30"
-  },
-  {
-    title: "National Geographic Documentary",
-    description: "Nature documentary narration showcasing wildlife in their natural habitat.",
-    audioUrl: "https://example.com/audio1.mp3",
-    category: "Documentary",
-    duration: "2:30"
-  },
- 
-  {
-    title: "National Geographic Documentary",
-    description: "Nature documentary narration showcasing wildlife in their natural habitat.",
-    audioUrl: "https://example.com/audio1.mp3",
-    category: "Documentary",
-    duration: "2:30"
-  },
-
-  {
-    title: "National Geographic Documentary",
-    description: "Nature documentary narration showcasing wildlife in their natural habitat.",
-    audioUrl: "https://example.com/audio1.mp3",
-    category: "Documentary",
-    duration: "2:30"
-  },
-  {
-    title: "National Geographic Documentary",
-    description: "Nature documentary narration showcasing wildlife in their natural habitat.",
-    audioUrl: "https://example.com/audio1.mp3",
-    category: "Documentary",
-    duration: "2:30"
-  },
-  {
-    title: "National Geographic Documentary",
-    description: "Nature documentary narration showcasing wildlife in their natural habitat.",
-    audioUrl: "https://example.com/audio1.mp3",
-    category: "Documentary",
-    duration: "2:30"
-  },
-  {
-    title: "National Geographic Documentary",
-    description: "Nature documentary narration showcasing wildlife in their natural habitat.",
-    audioUrl: "https://example.com/audio1.mp3",
-    category: "Documentary",
-    duration: "2:30"
-  },
-  {
-    title: "National Geographic Documentary",
-    description: "Nature documentary narration showcasing wildlife in their natural habitat.",
-    audioUrl: "https://example.com/audio1.mp3",
-    category: "Documentary",
-    duration: "2:30"
-  },
-  {
-    title: "National Geographic Documentary",
-    description: "Nature documentary narration showcasing wildlife in their natural habitat.",
-    audioUrl: "https://example.com/audio1.mp3",
-    category: "Documentary",
-    duration: "2:30"
-  },
-  {
-    title: "National Geographic Documentary",
-    description: "Nature documentary narration showcasing wildlife in their natural habitat.",
-    audioUrl: "https://example.com/audio1.mp3",
-    category: "Documentary",
-    duration: "2:30"
-  },
-
-
-];
-
-export default function VoiceOver() {
+const About: React.FC = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: 0.1
+    threshold: 0.1,
   });
 
   return (
-    <section id="voice-over" className="min-h-screen bg-gradient-to-br from-black via-blue-950 to-purple-950 py-20">
+    <section id="about" className="min-h-screen bg-gradient-to-br from-blue-950 via-purple-950 to-black py-20">
       <div className="container mx-auto px-4">
         <motion.div
           ref={ref}
-          initial={{ opacity: 0, y: 20 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
+          initial={{ opacity: 0 }}
+          animate={inView ? { opacity: 1 } : {}}
           transition={{ duration: 0.8 }}
+          className="grid md:grid-cols-2 gap-12 items-center"
         >
-          <h2 className="text-4xl font-bold mb-12 text-center">Voice-Over Work</h2>
-          
-          <div className="grid md:grid-cols-2 gap-8">
-            {projects.map((project, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-                animate={inView ? { opacity: 1, x: 0 } : {}}
-                transition={{ delay: index * 0.2, duration: 0.8 }}
-                className="bg-white/5 backdrop-blur-sm rounded-lg p-6 hover:bg-white/10 transition-all"
-              >
-                <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-xl font-semibold">{project.title}</h3>
-                  <span className="text-sm text-gray-400">{project.category}</span>
-                </div>
-                <p className="text-gray-300 mb-4">{project.description}</p>
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center space-x-4">
-                    <button className="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center hover:bg-blue-500/30 transition-colors">
-                      <Play className="w-5 h-5 text-blue-400" />
-                    </button>
-                    <Volume2 className="w-5 h-5 text-gray-400" />
-                    <div className="w-32 h-1 bg-gray-700 rounded-full">
-                      <div className="w-1/3 h-full bg-blue-500 rounded-full" />
-                    </div>
+          <motion.div
+            initial={{ x: -100, opacity: 0 }}
+            animate={inView ? { x: 0, opacity: 1 } : {}}
+            transition={{ delay: 0.2, duration: 0.8 }}
+          >
+            <img
+              src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+              alt="Professional headshot"
+              className="rounded-lg shadow-2xl w-full h-[600px] object-cover"
+            />
+          </motion.div>
+
+          <motion.div
+            initial={{ x: 100, opacity: 0 }}
+            animate={inView ? { x: 0, opacity: 1 } : {}}
+            transition={{ delay: 0.4, duration: 0.8 }}
+            className="text-white"
+          >
+            <h2 className="text-4xl font-bold mb-6 font-poppins">About Me</h2>
+            <p className="text-gray-300 mb-6 text-lg font-poppins">
+              I am Younes Abdat, a passionate video editor and voice-over artist with a keen eye for storytelling and creativity.
+              I bring visuals to life with engaging edits and deliver captivating voice performances in Arabic.
+              With experience collaborating with diverse organizations and projects,
+              I strive to combine technical expertise with artistic flair to produce impactful content.
+            </p>
+
+            <div className="grid grid-cols-2 gap-6 mb-8">
+              <div className="bg-white/5 p-4 rounded-lg backdrop-blur-sm">
+                <h3 className="text-xl font-semibold mb-2 font-poppins">Experience</h3>
+                <p className="text-gray-400">10+ Years</p>
+              </div>
+
+              <div className="bg-white/5 p-4 rounded-lg backdrop-blur-sm">
+                <h3 className="text-xl font-semibold mb-2 font-poppins">Projects</h3>
+                <p className="text-gray-400">500+</p>
+              </div>
+              <div className="bg-white/5 p-4 rounded-lg backdrop-blur-sm">
+                <h3 className="text-xl font-semibold mb-2 font-poppins">Clients</h3>
+                <p className="text-gray-400">200+</p>
+              </div>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-2xl font-semibold mb-4 font-poppins">Expertise</h3>
+              <div className="space-y-2">
+                {['Commercial Voice-Over', 'Narrative', 'Character Voice', 'Video Editing', 'Sound Design', 'Motion Graphics', 'Videography', 'Photography'].map((skill, index) => (
+                  <div key={index} className="bg-white/5 rounded-full px-4 py-2 inline-block mr-2 mb-2 font-poppins">
+                    {skill}
                   </div>
-                  <span className="text-sm text-gray-400">{project.duration}</span>
-                </div>
-              </motion.div>
-            ))}
-          </div>
+                ))}
+              </div>
+            </div>
+          </motion.div>
         </motion.div>
       </div>
     </section>
   );
 }
+
+export default About;

@@ -39,10 +39,10 @@ export default function About() {
           >
             <h2 className="text-4xl font-bold mb-6">About Me</h2>
             <p className="text-gray-300 mb-6 text-lg">
-              I'm Younes Abdat,
-             a creative individual passionate about video editing, 
-             voice-over work, and data science 
-             [Deprecation] The 'textprediction' attribute will be removed in the future. 
+            I am Younes Abdat, a passionate video editor and voice-over artist with a keen eye for storytelling and creativity. 
+            I bring visuals to life with engaging edits and deliver captivating voice performances in Arabic.
+             With experience collaborating with diverse organizations and projects, 
+             I strive to combine technical expertise with artistic flair to produce impactful content. 
              </p>
             
             <div className="grùid grid-cols-2 gap-6 mb-8">

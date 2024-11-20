@@ -11,6 +11,7 @@ import cse from "../../photos/cse.png"
 import djezzy from "../../photos/djezzy.png"
 import gdg from "../../photos/gdg.png"
 import nbq from "../../photos/nbq.png"
+import { Lamp } from 'lucide-react';
 
 
 
